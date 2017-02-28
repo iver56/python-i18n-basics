@@ -1,5 +1,5 @@
 from __future__ import print_function
-from jinja2 import Environment
+from jinja2 import Environment, FileSystemLoader
 import locale
 import gettext
 
@@ -19,14 +19,12 @@ gnu_translations.install()
 
 print(_('helloworld'))
 
-env = Environment(extensions=['jinja2.ext.i18n'])
+env = Environment(
+    extensions=['jinja2.ext.i18n'],
+    loader=FileSystemLoader('templates')
+)
 env.install_gettext_translations(gnu_translations, newstyle=True)
 
-template = env.from_string(
-    """
-    {% trans %}Jinja 2 is awesome{% endtrans %}
-    {{ gettext('Gettext works') }}
-    """
-)
+template = env.get_template('my_template.jinja2')
 result = template.render()
 print(result)
