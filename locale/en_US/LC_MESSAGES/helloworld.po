@@ -1,0 +1,8 @@
+msgid "helloworld"
+msgstr "Hello world!"
+
+msgid "Gettext works"
+msgstr "Gettext works"
+
+msgid "Jinja2 is awesome"
+msgstr "Jinja2 is awesome"
