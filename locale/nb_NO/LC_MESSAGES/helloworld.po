@@ -1,8 +1,32 @@
+# Norwegian Bokmål (Norway) translations for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-02-28 12:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: nb_NO\n"
+"Language-Team: nb_NO <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: hello_world.py:20
 msgid "helloworld"
 msgstr "Hallo verden!"
 
-msgid "Gettext works"
-msgstr "Gettext fungerer"
-
+#: templates/my_template.jinja2:1
 msgid "Jinja2 is awesome"
 msgstr "Jinja2 er kjempebra"
+
+#: templates/my_template.jinja2:2
+msgid "Gettext works"
+msgstr "Gettext fungerer"
