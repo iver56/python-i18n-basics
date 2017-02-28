@@ -4,7 +4,9 @@
 [sudo] pip install -r requirements.txt
 ```
 
-## Compile `po` files to `mo`
+## Compile `po` files
+
+The `po` files (human readable) need to be compiled into machine readable `mo` files before gettext can use them
 
 ```bash
 pybabel compile --domain=helloworld --directory=locale --use-fuzzy
@@ -39,13 +41,13 @@ pybabel update --domain=helloworld --input-file=locale/helloworld.pot --output-d
 You can now see in the git diff for the *.po files where the new message was added, and you can hand-edit these files to localize the new message.
 
 For example, open `locale/nb_NO/LC_MESSAGES/helloworld.po` and edit
-```po
+```pot
 #: templates/my_template.jinja2:3
 msgid "Yet another message"
 msgstr ""
 ```
 to
-```po
+```pot
 #: templates/my_template.jinja2:3
 msgid "Yet another message"
 msgstr "Enda en melding"
