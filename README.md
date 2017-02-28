@@ -52,3 +52,7 @@ msgstr "Enda en melding"
 ```
 
 [Poedit](https://poedit.net/) is a good editor for doing this. For example, it'll highlight missing translations and suggest translations, and you'll just have to press a keyboard shortcut to apply the suggestion.
+
+## Command line aliases
+
+Since the `pybabel` commands can be quite long, and you might want to use them frequently, it is recommended to add short aliases to these commands to save time
