@@ -15,7 +15,7 @@ gnu_translations = gettext.translation(
     localedir=locale_path,
     languages=[current_locale]
 )
-gnu_translations.install()
+gnu_translations.install()  # Magically make the _ function globally available
 
 print(_('helloworld'))
 
